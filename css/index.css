@@ -1,0 +1,390 @@
+/* strat variables */
+:root
+{
+    --main-color: #009688;
+    --secondary-color:#ffffff;
+    --black-color:#000000;
+    --border-button-color: 2px solid var(--main-color);
+    --border-radios:5px;
+    --margin:100px 0;
+    --margin-bottom: 100px;
+     
+}
+/* end variables */
+
+/* start global rules  */
+*
+{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior:smooth;
+}
+body
+{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+.container 
+{
+    padding:25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section
+{
+    border-bottom: 3px solid #bbbbbb78;
+    padding: 50px;
+}
+/* small  */
+@media(min-width:760px)
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+/* medium */
+@media(min-width:992px)
+{
+    .container
+    {
+        width: 970px;
+    }
+}
+/* large    */
+ @media (min-width:1200px)
+{
+    .container
+    {
+        width: 1170px;
+    }
+}
+/* end global rules  */
+/* start header  */
+header
+{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+header .container,
+.states .container .con,
+.Popular-hotels .container .con,
+.hotels .container .con,
+.support .container,
+footer .container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    padding: 10px 25px;
+    gap: 20px;
+}
+@media (max-width:400px)
+{
+    header .container,
+    footer .container
+{
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+}
+header .container .login,
+header .container .icon-bar
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+header .container .login label
+{
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radios);
+}
+header .container .login label:hover,
+header .container .icon-bar i:hover
+{
+    background-color: #ffffff14;
+    cursor: pointer;
+}
+header .container .icon-bar
+{
+    display: none;
+    transform: translateY(-55px);
+}
+header .container .icon-bar i
+{
+    font-size: 40px;
+}
+@media (max-width:995px)
+{
+    header .container .login
+    {
+        display: none;
+    }
+    header .container .icon-bar
+    {
+        display: flex;
+    }
+}
+/* end header  */
+/* start img-header */
+.img-header
+{
+    background-image: url(../image/img-header.png);
+    background-size: cover;
+    position: relative;
+    height: 370px;
+}
+.img-header .con
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0000008f;
+    padding: 10px 0;
+}
+.img-header .con .container form
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-header .con .container form select,
+.img-header .con .container form input,
+.img-header .con .container form button
+{
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radios);
+    border: 0 solid transparent;
+    transition: .5s;
+}
+.img-header .con .container form button
+{
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+.img-header .con .container form button:hover  
+{
+    background-color:var(--main-color);
+    color: white;
+    border:2px solid #ffffff;
+    cursor: pointer;
+}
+.img-header .con .container form input:hover,
+.img-header .con .container form select:hover
+{
+    transform: scale(1.1,1.1);
+}
+/* end img-header */
+/* start states */
+@media (max-width:640px)
+{
+    section h1
+    {
+        font-size: 1.1em;
+    }
+}
+.states .container h1 i,
+.Popular-hotels .container  h1 i,
+.hotels .container  h1 i
+
+{
+    margin: 0 25px;
+    color: var(--main-color);
+}
+.states .container .con,
+.Popular-hotels .container .con,
+.hotels .container .con
+{
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    justify-content: center;
+    align-items: center;
+}
+.states .container .con .state,
+.Popular-hotels .container .con .place,
+.hotels .container .con .hotel
+{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: var(--border-radios);
+    box-shadow: 0px 1px 5px #00cccc;
+}
+.states .container .con .state img:hover,
+.Popular-hotels .container .con .place img:hover,
+.hotels .container .con .hotel img:hover
+{
+    transform: scale(1.1,1.1);
+}
+.states .container .con .state img,
+.Popular-hotels .container .con .place img,
+.hotels .container .con .hotel img
+{
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+.states .container .con div span,
+.Popular-hotels .container .con div span,
+.hotels .container .con div span
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+.states .container .con div span i,
+.Popular-hotels .container .con div span i,
+.hotels .container .con div span i
+{
+    font-size: 25px;
+}
+/* end states */
+/* start Popular-hotels */
+.Popular-hotels .container,
+.hotels .container
+{
+    position: relative;
+}
+.Popular-hotels .container .left,
+.Popular-hotels .container .right,
+.hotels .container .left,
+.hotels .container .right
+{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+@media (max-width:1200px)
+{
+.Popular-hotels .container .left,
+.Popular-hotels .container .right,
+.hotels .container .left,
+.hotels .container .right
+{
+    display: none;
+}
+}
+.Popular-hotels .container .left,
+.hotels .container .left
+{
+    left: 0;
+}
+.Popular-hotels .container .right,
+.hotels .container .right
+{
+    right: 0;
+}
+.Popular-hotels .container .con div span,
+.hotels .container .con div span 
+{
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--main-color);
+}
+/* end Popular-hotels */
+/* start hotels */
+.hotels .container .con .hotel
+{
+    position: relative;
+    overflow: visible;
+    margin-bottom: 85px;
+}
+.hotels .container .con div span 
+{
+    bottom: 85%;
+    font-size: 15px;
+    background-color:transparent;
+    text-align: right;
+}
+.hotels .container .con div span i
+{
+    padding-left: 10px;
+}
+.hotels .container .con .hotel .info-hotel
+{
+    transform: translate(-10px,10px);
+}
+.hotels .container .con .hotel .info-hotel ul
+{
+    list-style: none;
+}
+.hotels .container .con .hotel .info-hotel ul li
+{
+    margin-bottom: 10px;
+}
+.hotels .container .con .hotel .info-hotel i
+{
+    margin-left: 5px;
+}
+    /* end hotels */
+/* start support */
+.support
+{
+    background-image: linear-gradient(#009688,#0b2d2a);
+}
+.support .container
+{
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    text-align: center;
+    color: var(--secondary-color);
+}
+.support .container div h2
+{
+    margin-bottom: 20px;
+}
+.support .container div ul
+{
+    list-style: none;
+}
+.support .container div ul li
+{
+    margin-bottom: 10px;
+}
+.support .container div ul li a
+{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+/* end support */
+footer
+{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+footer .container
+{
+    padding: 20px 25px;
+}
+footer .container h5:last-child
+{
+    text-align: left;
+}
+@media (max-width:980px)
+{
+    footer .container h5,
+    footer .container h5:last-child
+    {
+        text-align: center;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- file normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main file -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- start header  -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>يمن <span>هوتل</span></h1>
+            </div>
+            <div class="login">
+                <label for="">تسجيل الدخول</label>
+            </div>
+            <div class="icon-bar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- start img-header -->
+    <div class="img-header">
+        <div class="con">
+            <div class="container">
+                <form method="get">
+                    <select name="place">
+                                <option value="1">حضرموت</option>
+                                <option value="2">عدن</option>
+                                <option value="3">صنعاء</option>
+                                <option value="4">حضرموت</option>
+                                <option value="5">عدن</option>
+                                <option value="6">صنعاء</option>
+                                <option value="7">حضرموت</option>
+                                <option value="8">عدن</option>
+                                <option value="9">صنعاء</option>
+                            </select>  
+                        
+                        <input type="date" name="datestart" id="datestart" >
+                         <input type="date" name="dateend" id="dateend">
+                    <select name="jobtype">
+                                <option>غرفة سرير</option>
+                                <option>غرفة سريرين</option>
+                                <option>غرفة ثلاثة اسرة</option>
+                                <option>غرفة اربعة سرير</option>
+                        <option>غرفةعائلي</option>
+                        <option>جناح</option>
+                        <option>شقة</option>
+                            </select>   
+                        <button name="save">البحث عن فندق</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!-- end img-header -->
+    <main>
+        <!-- start states -->
+        <section class="states">
+            <div class="container">
+                <h1> <i class="fas fa-map-marked-alt"></i>الوجهات السياحية في اليمن</h1>
+                <div class="con">
+                    <div class="state">
+                        <a href="">
+                            <img src="image/hadrmot/place/mukalla.jpg" alt="حضرموت">
+                            <span>حضرموت <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/sana/snaa.jpg" alt="صنعاء">
+                            <span>صنعاء <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/marpa/marpa.jpg" alt="مارب">
+                            <span>مارب <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/aden/aden.jpg" alt="عدن">
+                            <span>عدن <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/almhrh/almhrh.jpg" alt="المهرة">
+                            <span>المهرة <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/alhdidh/alhdidh.jpg" alt="الحديدة">
+                            <span>الحديدة <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/ab/ab.jpg" alt="أب">
+                            <span>أب <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/shaboh/shboh.jpeg" alt="شبوة">
+                            <span>شبوة <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/abin/abin.jpg" alt="ابين">
+                            <span>ابين <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/lhg/lhg.jpg" alt="لحج">
+                            <span>لحج <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/taz/taz.jpg" alt="تعز">
+                            <span>تعز <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                    <div class="state">
+                        <a href="">
+                            <img src="image/albitah/albitah.jpg" alt="البيضاء">
+                            <span>البيضاء <i class="fas fa-map-marker-alt"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end states -->
+        <!-- start Popular-hotels -->
+        <section class="Popular-hotels">
+            <div class="container">
+                <i class="fas fa-angle-right right"></i>
+                <i class="fas fa-angle-left left"></i>
+                <h1> <i class="fas fa-bus"></i>أماكن سياحية في اليمن</h1>
+                <div class="con">
+                    <div class="place">
+                        <a href="">
+                            <img src="image/hadrmot/sbam.jpg" alt="مدينة شبام">
+                            <span>مدينة شبام <i class="fas fa-plane"></i></span>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="">
+                            <img src="image/sana/hteb.jpg" alt="  قرية الحطيب">
+                            <span> قرية الحطيب <i class="fas fa-plane"></i></span>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="">
+                            <img src="image/almhrh/hofa.jpg" alt=" محمية حوف   ">
+                            <span> محمية حوف   <i class="fas fa-plane"></i></span>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="">
+                            <img src="image/marpa/blgis.jpg" alt=" عرش بلقيس ">
+                            <span> عرش بلقيس<i class="fas fa-plane"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Popular-hotels -->
+         <!-- start hotels -->
+         <section class="hotels">
+            <div class="container">
+                <i class="fas fa-angle-right right"></i>
+                <i class="fas fa-angle-left left"></i>
+                <h1> <i class="fas fa-hotel"></i>فنادق مشهورة</h1>
+                <div class="con">
+                    <div class="hotel">
+                        <a href="">
+                            <img src="image/hadrmot/01.jpg" alt="  فندق يمن جراند">
+                            <span><i class="fas fa-h-square"></i> فندق يمن جراند</span>
+                        </a>
+                        <div class="info-hotel">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-hotel"></i>
+                                    فندق يمن جراند  
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اليمن/حضرموت/المكلا
+                                </li>
+                                <li>
+                                    <i class="fas fa-dollar-sign"></i>
+                                         100     
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hotel">
+                        <a href="">
+                            <img src="image/sana/03.jpg" alt="مدينة شبام">
+                            <span><i class="fas fa-h-square"></i> يمن هوتل</span>
+                        </a>
+                        <div class="info-hotel">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-hotel"></i>
+                                    فندق موفنبيك      
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اليمن/صنعاء/صنعاء
+                                </li>
+                                <li>
+                                    <i class="fas fa-dollar-sign"></i>
+                                         200     
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hotel">
+                        <a href="">
+                            <img src="image/hadrmot/0444.jpg" alt="مدينة شبام">
+                            <span><i class="fas fa-h-square"></i> يمن هوتل</span>
+                        </a>
+                        <div class="info-hotel">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-hotel"></i>
+                                         منتجع حيد الجزيل  
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اليمن/حضرموت/دوعن
+                                </li>
+                                <li>
+                                    <i class="fas fa-dollar-sign"></i>
+                                         50     
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hotel">
+                        <a href="">
+                            <img src="image/hadrmot/3.jpg" alt="مدينة شبام">
+                            <span><i class="fas fa-h-square"></i> يمن هوتل</span>
+                        </a>
+                        <div class="info-hotel">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-hotel"></i>
+                                       فندق رمادا   
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    اليمن/حضرموت/المكلا
+                                </li>
+                                <li>
+                                    <i class="fas fa-dollar-sign"></i>
+                                         200     
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end hotels -->
+        <!-- start support -->
+        <section class="support">
+            <div class="container">
+                <div>
+                    <h2>شركتنا</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                من نحن
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                وظائف شاغرة 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>السياسات</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                الشروط والاحكام 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                   سياسة الخصوصية 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>الدعم</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                تواصل معنا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                الاسئلة المتكررة  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>التواصل الاجتماعي</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                 فيسبوك 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                انستقرام  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                توتير  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>محافظات</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                صنعاء 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                عدن  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                حضرموت  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                المهرة  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end support  -->
+        <!-- start footer  -->
+        <footer>
+            <div class="container">
+                <h5>تم تصميم هذه الصفحة بواسطة مراد حسن العمودي</h5>
+                <h5>جميع الحقوق محفوظ لدى يمن هوتل</h5>
+            </div>
+        </footer>
+        <!-- end footer  -->
+    </main>
+</body>
+</html>
